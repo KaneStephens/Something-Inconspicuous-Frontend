@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kitty-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.kitty-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.delivery-details {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.delivery-details h1 {
+  font-size: 1.5rem;
+  color: #007000;
+  margin-bottom: 10px;
+}
+
+.delivery-details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-one,
+.btn-two {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+}
+
+.btn-one {
+  background-color: #007000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-two {
+  background-color: white;
+  color: #007000;
+  border: 1px solid #007000;
 }
